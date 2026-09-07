@@ -9,7 +9,9 @@
 /storage/framework/cache
 /storage/framework/sessions
 /storage/framework/testing
+/storage/framework/views
 /storage/logs/*.log
+/bootstrap/cache/*.php
 /public/hot
 /public/storage
 /tests
