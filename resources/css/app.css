@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-cream-100 text-coffee-800 antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-serif text-coffee-900;
+    }
+
+    ::selection {
+        @apply bg-terracotta-500/25;
+    }
+}
+
+@layer components {
+    .section-title {
+        @apply font-serif text-3xl text-coffee-900 sm:text-4xl;
+    }
+
+    .btn-primary {
+        @apply inline-flex items-center justify-center rounded-cozy bg-terracotta-500 px-6 py-3 font-medium text-cream-50 transition hover:bg-terracotta-600 focus:outline-none focus:ring-2 focus:ring-terracotta-500 focus:ring-offset-2 focus:ring-offset-cream-100;
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center justify-center rounded-cozy bg-sage-500 px-6 py-3 font-medium text-coffee-900 transition hover:bg-sage-600 focus:outline-none focus:ring-2 focus:ring-sage-500 focus:ring-offset-2 focus:ring-offset-cream-100;
+    }
+
+    .card {
+        @apply rounded-cozy bg-cream-50 shadow-warm;
+    }
+}
